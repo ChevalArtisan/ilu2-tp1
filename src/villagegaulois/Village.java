@@ -45,7 +45,7 @@ public class Village {
 		private Etal[] trouverEtals(String produit) {
 			; int nbEtalsProduit=0;
 			for (int i = 0; i <nbEtals; i++) {
-				if (etals[i].contientProduit(produit)) {
+				if (etals[i].contientProduit(produit)&& etals[i].isEtalOccupe()) {
 					nbEtalsProduit++;
 					}
 				}

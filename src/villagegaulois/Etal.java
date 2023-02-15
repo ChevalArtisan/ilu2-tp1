@@ -25,7 +25,7 @@ public class Etal {
 		etalOccupe = true;
 	}
 
-	public String libererEtal() {
+	public String libererEtal()throws etalpasbien {
 		etalOccupe = false;
 		StringBuilder chaine = new StringBuilder(
 				"Le vendeur " + vendeur.getNom() + " quitte son étal, ");
